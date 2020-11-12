@@ -1,7 +1,7 @@
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class tw_lab4 {
+public class Main {
     public static void main(String[] args) {
         int M = 100;
         int m = 100;
