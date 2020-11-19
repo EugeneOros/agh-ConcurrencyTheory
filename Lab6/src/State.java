@@ -1,0 +1,3 @@
+public enum State {
+    EMPTY, IN_PROGRESS_PUT, FILLED, IN_PROGRESS_GET
+}
