@@ -30,15 +30,15 @@ public class Main {
         ArrayList<Thread> consumers = new ArrayList<>(countConsumers);
 
         if(!isMonitor) {
-            proxy = new Proxy(capacity, countBufferWait);
-
-            for (int i = 0; i < countProducers; i++) {
-                producers.add(new ProducerAO(proxy, i, countWork));
-            }
-
-            for (int i = 0; i < countConsumers; i++) {
-                consumers.add(new ConsumerAO(proxy, i, countWork));
-            }
+//            proxy = new Proxy(capacity, countBufferWait);
+//
+//            for (int i = 0; i < countProducers; i++) {
+//                producers.add(new ProducerAO(proxy, i, countWork));
+//            }
+//
+//            for (int i = 0; i < countConsumers; i++) {
+//                consumers.add(new ConsumerAO(proxy, i, countWork));
+//            }
         }else{
             BufferM buff = new BufferM(capacity, countBufferWait);
 

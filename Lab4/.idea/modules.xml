@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lab4.iml" filepath="$PROJECT_DIR$/.idea/Lab4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NP(1-K)+MC(1-K)+2KB_boolean/NP(1-K)+MC(1-K)+2KB_boolean.iml" filepath="$PROJECT_DIR$/NP(1-K)+MC(1-K)+2KB_boolean/NP(1-K)+MC(1-K)+2KB_boolean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NP(1-K)+MC(1-K)+2KB_hasWaiters/NP(1-K)+MC(1-K)+2KB_hasWaiters.iml" filepath="$PROJECT_DIR$/NP(1-K)+MC(1-K)+2KB_hasWaiters/NP(1-K)+MC(1-K)+2KB_hasWaiters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NP_1C_asynchronized/NP_1C_asynchronized.iml" filepath="$PROJECT_DIR$/NP_1C_asynchronized/NP_1C_asynchronized.iml" />
+    </modules>
+  </component>
+</project>

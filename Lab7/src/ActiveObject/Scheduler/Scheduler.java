@@ -29,7 +29,6 @@ public class Scheduler extends Thread{
         }finally {
             lock.unlock();
         }
-
     }
 
     @Override

@@ -47,9 +47,6 @@ public class ProducerAO extends Thread{
             List<Integer> listToPut = generateListToPut();
             futuresToPut = proxy.put(listToPut, id);
             listToPut = generateListToPut();
-//            for(int i=0; i<countWork; i++){
-//                doSomething();
-//            }
             int i=0;
             while(running.get()){
                 if(futuresToPut.isAvailable()){
@@ -61,9 +58,6 @@ public class ProducerAO extends Thread{
                     i++;
                     doSomething();
                 }
-//                for(int i=0; i<countWork; i++){
-//                   doSomething();
-//                }
                 if(Thread.interrupted()){
                     running.set(false);
                     System.out.println("P "+ countMRequestsDone);

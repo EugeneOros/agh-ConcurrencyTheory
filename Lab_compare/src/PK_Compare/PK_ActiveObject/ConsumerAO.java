@@ -35,9 +35,14 @@ public class ConsumerAO extends WorkConsumer {
                     doSomething();
                 }
                 futureToGet.get();
+                if(Thread.interrupted()){
+
+                }
             }
+
         }catch(Exception e){
             e.printStackTrace();
         }
+
     }
 }

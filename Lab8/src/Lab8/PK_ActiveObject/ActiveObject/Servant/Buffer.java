@@ -21,9 +21,9 @@ public class Buffer {
             throw new IllegalStateException("Added to full buffer");
         } else {
             buffer.addAll(listToPut);
-            for (int j = 0; j < countWait; j++) {
-                Math.cos(30);
-            }
+//            for (int j = 0; j < countWait; j++) {
+//                Math.cos(30);
+//            }
         }
     }
 
@@ -32,9 +32,9 @@ public class Buffer {
 
         for (int i = 0; i < countToGet; i++) {
             result.add(buffer.remove());
-            for (int j = 0; j < countWait; j++) {
-                Math.cos(30);
-            }
+//            for (int j = 0; j < countWait; j++) {
+//                Math.cos(30);
+//            }
         }
         return result;
     }

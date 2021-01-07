@@ -1,8 +1,7 @@
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException, ExecutionException, TimeoutException {
         int M = 100;
         int m = 100;
         int n = 100;
@@ -11,13 +10,21 @@ public class Main {
         ExecutorService service = Executors.newFixedThreadPool(m + n);
 
         for(int i=1; i<=m; i++) {
-            service.submit(new Producer(buf, M));
+            service.submit(new Producer(buf, M)) ;
         }
 
         for(int i=1; i<=n; i++) {
             service.submit(new Consumer(buf, M));
         }
 
-        service.shutdown();
+        try {
+            service.shutdown();
+            if (!service.awaitTermination(1, TimeUnit.MINUTES)) {
+                service.shutdownNow();
+            }
+//            scheduler.shutdownNow();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
